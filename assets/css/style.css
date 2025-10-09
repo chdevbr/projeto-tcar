@@ -378,14 +378,14 @@ header .menu .nav-links a:hover {
 }
 
 /* FOOTER */
-footer {
+/* footer {
   margin-top: 32px;
   background: #020000;
   border-top: 2px solid var(--cor-principal);
   padding: 20px;
   text-align: center;
   color: #fff;
-}
+} */
 
 /* RESPONSIVIDADE */
 @media (max-width: 900px) {
