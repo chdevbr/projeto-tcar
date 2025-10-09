@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
   --cor-fundo: #0a0a0f;
   --cor-principal: #ea0202;
   --cor-botao: #e20000;
-  --fonte-principal: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --fonte-principal: "Segoe UI", "Roboto", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 * {
@@ -302,7 +304,8 @@ header .menu .nav-links a:hover {
 
 .carro {
   position: relative;
-  height: 100vh;
+  width: 100%;
+  min-height: 600px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -376,16 +379,6 @@ header .menu .nav-links a:hover {
 .carro.furia {
   background-image: url("../img/t-furia.png");
 }
-
-/* FOOTER */
-/* footer {
-  margin-top: 32px;
-  background: #020000;
-  border-top: 2px solid var(--cor-principal);
-  padding: 20px;
-  text-align: center;
-  color: #fff;
-} */
 
 /* RESPONSIVIDADE */
 @media (max-width: 900px) {
