@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato | TCAR</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <img src="./assets/img/logo.png" alt="Imagem da logo" class="logo" />
+        <nav class="menu">
+          <ul class="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="/sobre.html">Sobre</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero hero-contato">
+          <div class="hero-text">
+            <span class="new">FALE CONOSCO</span>
+            <h1>CONTATO</h1>
+            <p class="sline">Estamos prontos para te atender</p>
+          </div>
+        </section>
+
+        <section class="contato">
+          <div class="container">
+            <h1>Entre em <span>Contato</span> conosco</h1>
+            <p class="descricao">
+              Quer saber mais sobre nossos modelos, agendar um test drive ou
+              tirar dúvidas? Preencha o formulário abaixo ou fale com nossa
+              equipe pelos canais disponíveis.
+            </p>
+
+            <form class="form-contato" action="#" method="post">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" required />
+
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="mensagem">Mensagem</label>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                rows="5"
+                required
+              ></textarea>
+
+              <button type="submit">Enviar Mensagem</button>
+            </form>
+
+            <div class="info-contato">
+              <h2>Outros Canais</h2>
+              <p>📍 Av. Cais do Apolo, nº 77 — TCAR</p>
+              <p>📧 contato@tcar.com.br</p>
+              <p>📞 (81) 91510-2025</p>
+            </div>
+
+            <br />
+
+            <div class="mapa">
+              <h2>📍 Localização — TCAR</h2>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1396.6801887734823!2d-34.87298486602841!3d-8.059785209470476!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18a2e1380345%3A0x24c7863e4d95ddd4!2sCESAR%20School!5e0!3m2!1sen!2sbr!4v1760448346560!5m2!1sen!2sbr"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; 2025 Loja de Carros</p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   --cor-fundo: #0a0a0f;
   --cor-principal: #ea0202;
   --cor-botao: #e20000;
+  --cor-texto: #fff;
   --fonte-principal: "Segoe UI", "Roboto", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -20,7 +21,7 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: var(--cor-fundo);
-  color: #fff;
+  color: var(--cor-texto);
 }
 
 .container {
@@ -35,7 +36,7 @@ header {
   height: 150px;
   background: linear-gradient(90deg, #070000, #160707);
   border-bottom: 2px solid var(--cor-principal);
-  color: #fff;
+  color: var(--cor-texto);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,7 +61,7 @@ header .menu .nav-links {
 }
 header .menu .nav-links a {
   text-decoration: none;
-  color: #fff;
+  color: var(--cor-texto);
   font-size: 1.3rem;
   font-weight: bold;
   margin: 0 20px;
@@ -82,7 +83,7 @@ header .menu .nav-links a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: #fff;
+  color: var(--cor-texto);
   position: relative;
 }
 
@@ -140,7 +141,7 @@ header .menu .nav-links a:hover {
 .hero-text a {
   display: inline-block;
   width: fit-content;
-  color: #fff;
+  color: var(--cor-texto);
   background: var(--cor-botao);
   text-decoration: none;
   font-size: 1rem;
@@ -163,7 +164,7 @@ header .menu .nav-links a:hover {
 /* Sobre */
 .sobre {
   background-color: #0a0a0f;
-  color: #fff;
+  color: var(--cor-texto);
   padding: 80px 20px;
   text-align: center;
 }
@@ -188,7 +189,7 @@ header .menu .nav-links a:hover {
 .destaques {
   background-color: #0a0a0f;
   padding: 60px 20px;
-  color: #fff;
+  color: var(--cor-texto);
 }
 
 .destaques h2 {
@@ -197,7 +198,7 @@ header .menu .nav-links a:hover {
   margin-bottom: 32px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--cor-texto);
   text-decoration: underline;
   text-underline-offset: 10px;
   text-decoration-color: var(--cor-principal);
@@ -259,13 +260,13 @@ header .menu .nav-links a:hover {
 .card-body h3 {
   font-size: 1.25rem;
   margin: 0;
-  color: #fff;
+  color: var(--cor-texto);
 }
 
 .card-btn {
   display: inline-block;
   background: var(--cor-botao);
-  color: #fff;
+  color: var(--cor-texto);
   padding: 10px 18px;
   border-radius: 100px;
   text-decoration: none;
@@ -299,7 +300,7 @@ header .menu .nav-links a:hover {
   text-underline-offset: 10px;
   text-decoration-color: var(--cor-principal);
   letter-spacing: 2px;
-  color: #fff;
+  color: var(--cor-texto);
 }
 
 .carro {
@@ -309,7 +310,7 @@ header .menu .nav-links a:hover {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  color: #fff;
+  color: var(--cor-texto);
   margin-bottom: 80px;
   background-size: cover;
   background-position: center;
@@ -350,7 +351,7 @@ header .menu .nav-links a:hover {
 .carro-conteudo .btn-car {
   display: inline-block;
   background: var(--cor-botao);
-  color: #fff;
+  color: var(--cor-texto);
   font-size: 1.2rem;
   padding: 16px 50px;
   border-radius: 30px;
@@ -367,6 +368,129 @@ header .menu .nav-links a:hover {
 .carro-conteudo .btn-car:focus {
   outline: 2px solid var(--cor-principal);
   outline-offset: 4px;
+}
+
+.detalhe-hero {
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: var(--cor-texto);
+}
+
+.detalhe-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.detalhe-hero-text {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.breadcrumb {
+  width: 100%;
+  max-width: 1100px;
+  margin: 30px auto 10px auto;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  color: #bbb;
+}
+
+.breadcrumb a {
+  color: var(--cor-principal);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb a:hover {
+  color: #fff;
+}
+
+.breadcrumb span {
+  color: #fff;
+  font-weight: bold;
+}
+
+.detalhe-hero-text h1 {
+  font-size: 3rem;
+  color: var(--cor-principal);
+  margin-bottom: 12px;
+}
+
+.detalhe-content {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tabela-detalhes {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin: 30px 0;
+}
+
+.tabela-detalhes th {
+  background: var(--cor-principal);
+  color: #fff;
+  padding: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tabela-detalhes td {
+  padding: 14px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  color: #222;
+}
+
+.tabela-detalhes tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.detalhe-descricao p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ddd;
+  margin: 20px 0;
+}
+
+.btn-voltar {
+  display: inline-block;
+  background: var(--cor-botao);
+  color: var(--cor-texto);
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-voltar:hover {
+  background: #ff1a2a;
+  transform: translateY(-2px);
+}
+
+/* Fundo específico do carro */
+.detalhe-hero.bigg {
+  background-image: url("../img/t-bigg.png");
+}
+.detalhe-hero.shadow-night {
+  background-image: url("../img/t-shadow-night.png");
+}
+.detalhe-hero.furia {
+  background-image: url("../img/t-furia.png");
 }
 
 /* Fundos específicos de cada carro */
@@ -420,7 +544,7 @@ header .menu .nav-links a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: #fff;
+  color: var(--cor-texto);
   position: relative;
 }
 
@@ -445,18 +569,18 @@ header .menu .nav-links a:hover {
 .sobre-hero-text h1 {
   font-size: 3.5rem;
   margin-bottom: 16px;
-  color: #fff;
+  color: var(--cor-texto);
 }
 
 .sobre-hero-text p {
   font-size: 1.3rem;
-  color: #fff;
+  color: var(--cor-texto);
 }
 
 .sobre-content {
   background: var(--cor-fundo);
   padding: 64px;
-  color: #fff;
+  color: var(--cor-texto);
 }
 
 .sobre-section {
@@ -506,7 +630,7 @@ header .menu .nav-links a:hover {
 
 .valores-item p {
   font-size: 1rem;
-  color: #fff;
+  color: var(--cor-texto);
   line-height: 1.6;
 }
 
@@ -517,7 +641,7 @@ header .menu .nav-links a:hover {
 
 .diferenciais-list li {
   font-size: 1.1rem;
-  color: #fff;
+  color: var(--cor-texto);
   padding: 12px 0;
   padding-left: 32px;
   position: relative;
@@ -531,6 +655,76 @@ header .menu .nav-links a:hover {
   color: #ea0202;
   font-weight: bold;
   font-size: 1.3rem;
+}
+
+.tabela-produtos {
+  padding: 80px 20px;
+  background-color: #0a0a0f;
+  color: var(--cor-texto);
+  text-align: center;
+}
+
+.tabela-produtos h2 {
+  font-size: 2.2rem;
+  color: var(--cor-principal);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tabela-produtos p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.tabela-produtos table {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(234, 2, 2, 0.15);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.03),
+    rgba(0, 0, 0, 0.4)
+  );
+}
+
+.tabela-produtos th {
+  background-color: var(--cor-principal);
+  color: var(--cor-texto);
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 16px;
+  letter-spacing: 1px;
+}
+
+.tabela-produtos td {
+  padding: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ddd;
+  font-size: 1rem;
+}
+
+.tabela-produtos tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.tabela-produtos tr:hover {
+  background-color: rgba(234, 2, 2, 0.15);
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .tabela-produtos table {
+    font-size: 0.9rem;
+  }
+  .tabela-produtos th,
+  .tabela-produtos td {
+    padding: 10px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -550,8 +744,14 @@ header .menu .nav-links a:hover {
 footer {
   width: 100%;
   max-width: 2200px;
-  background: linear-gradient(245deg, #160707 0%, #070000 20%, #070000 50%, #160707 140%);
-  color: #fff;
+  background: linear-gradient(
+    245deg,
+    #160707 0%,
+    #070000 20%,
+    #070000 50%,
+    #160707 140%
+  );
+  color: var(--cor-texto);
   text-align: center;
   padding: 32px 16px;
   border-top: 2px solid #ea0202;
@@ -581,5 +781,127 @@ footer {
 }
 
 .footer-social a:hover {
-  color: #fff;
+  color: var(--cor-texto);
+}
+
+.hero-contato {
+  background-image: url("../img/t-ben10.png.png");
+  background-size: cover;
+  background-position: center;
+  border-bottom: 2px solid var(--cor-principal);
+}
+
+.hero-contato h1 {
+  font-size: 6rem;
+}
+
+.new {
+  color: var(--cor-principal);
+  font-size: 18px;
+  letter-spacing: 6px;
+}
+
+.contato {
+  background-color: #0a0a0f;
+  color: var(--cor-texto);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contato h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.contato h1 span {
+  color: var(--cor-principal);
+}
+
+.contato .descricao {
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.form-contato {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+
+.form-contato label {
+  font-weight: bold;
+  color: var(--cor-texto);
+}
+
+.form-contato input,
+.form-contato textarea {
+  background-color: #111;
+  border: 1px solid #333;
+  border-radius: 8px;
+  color: var(--cor-texto);
+  padding: 12px;
+  font-size: 1rem;
+  transition: border 0.3s ease, background 0.3s ease;
+}
+
+.form-contato input:focus,
+.form-contato textarea:focus {
+  border-color: var(--cor-principal);
+  background-color: #151515;
+  outline: none;
+}
+
+.form-contato button {
+  background-color: var(--cor-botao);
+  color: var(--cor-texto);
+  border: none;
+  border-radius: 30px;
+  padding: 14px 28px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.form-contato button:hover {
+  background-color: #ff1a2a;
+  transform: translateY(-2px);
+}
+
+.info-contato {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.info-contato h2 {
+  color: var(--cor-principal);
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.info-contato p {
+  color: #ccc;
+  margin-bottom: 5px;
+}
+
+.mapa iframe {
+  margin-top: 16px;
+  max-width: 900px;
+  width: 90%;
+  height: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mapa iframe:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
 }
